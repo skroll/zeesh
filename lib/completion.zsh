@@ -31,3 +31,13 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
 ## ... unless we really want to
 zstyle '*' single-ignored show
 
+## Enable menu completion
+
+## Do not automatically select the first completion entry
+unsetopt menu_complete
+
+## Show completion menu on successive 
+setopt auto_menu
+
+## Enable menu select on all completions
+zstyle ':completion:*:*:*:*:*' menu select
