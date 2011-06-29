@@ -38,6 +38,10 @@ h3. brew
 
 Shamelessly stolen from @oh-my-zsh@, this adds completion support and some helper functions for "homebrew":http://mxcl.github.com/homebrew on the mac.
 
+h3. git-flow
+
+Autocomplete support for use with the "git-flow":https://github.com/nvie/gitflow @git@ extensions.
+
 h3. gnu-utils
 
 Tries to use GNU based core-utils if they are available, and adjusts some aliases appropriately. For example, if @ls@ reports as a GNU version, then it will use the @--color@ parameter. If it is a BSD version, it will use @-G@. However, if it's the BSD version, and @gls@ is available, and it reports as a GNU version, then @ls@ will be aliased to @ls --color@.
