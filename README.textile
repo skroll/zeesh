@@ -32,7 +32,7 @@ h2. Plugins
 
 h3. brew
 
-Shameless stolen from @oh-my-zsh@, this adds completion support and some helper functions for "homebrew":http://mxcl.github.com/homebrew on the mac.
+Shamelessly stolen from @oh-my-zsh@, this adds completion support and some helper functions for "homebrew":http://mxcl.github.com/homebrew on the mac.
 
 h3. gnu-utils
 
