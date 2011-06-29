@@ -24,7 +24,7 @@ h3. Themes
 
 h3. Customization
 
-@zeesh@ has support for custom scripts without worry of destroying the already existing configuration. All global scripts that need to be loaded should be placed in @~/.zeesh/custom@ . All custom functions should be placed in @~/.zeesh/custom/functions@ . All custom plugins should be placed in @~/.zeesh/custom/plugins@ . Any scripts, functions, or plugins in the proper directories will be automatically compiled and loaded in the environment the next time the @zsh@ configuration is reloaded.
+@zeesh@ has support for custom scripts without worry of destroying the already existing configuration. All global scripts that need to be loaded should be placed in @~/.zeesh/custom/lib@ with a @.zsh@ extension. All custom functions should be placed in @~/.zeesh/custom/functions@ . All custom plugins should be placed in @~/.zeesh/custom/plugins@ . Any scripts, functions, or plugins in the proper directories will be automatically compiled and loaded in the environment the next time the @zsh@ configuration is reloaded.
 
 h3. Sane Keyboard Bindings
 
@@ -37,6 +37,10 @@ h2. Plugins
 h3. brew
 
 Shamelessly stolen from @oh-my-zsh@, this adds completion support and some helper functions for "homebrew":http://mxcl.github.com/homebrew on the mac.
+
+h3. git-flow
+
+Autocomplete support for use with the "git-flow":https://github.com/nvie/gitflow @git@ extensions.
 
 h3. gnu-utils
 
@@ -66,6 +70,10 @@ h2. Default Key-Bindings
 | @Ctrl-Left@ | Move left a word |
 | @Ctrl-Right@ | Move right a word |
 | @Ctrl-R@ | Incremental history search |
+
+h2. Known Problems
+
+1. It appears that the initial keybinding configuration used in @zeesh@ doesn't work under cygwin. This seems to be a known problem. Currently the only solution is to take an existing and working configuration from @~/.zeesh/.zkbd@ and copy it to the file that is failing to be created on cygwin. If anyone knows of a solution let me know.
 
 h2. Uninstalling
 
