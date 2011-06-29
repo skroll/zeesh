@@ -1,0 +1,4 @@
+*.zwc
+.cache
+.zkbd
+.zsh_history
