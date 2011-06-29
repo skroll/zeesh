@@ -52,7 +52,7 @@ Updates your terminal's window title to show your current path.
 
 h2. Default Key-Bindings
 
-| _Key_ | _Function_ |
+| *Key* | *Function* |
 | @Home@ | Move to beginning of the line |
 | @End@ | Move to the end of the line |
 | @Up@ | Partial search of history backwards |
