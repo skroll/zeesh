@@ -24,7 +24,7 @@ h3. Themes
 
 h3. Customization
 
-@zeesh@ has support for custom scripts without worry of destroying the already existing configuration. All global scripts that need to be loaded should be placed in @~/.zeesh/custom@ . All custom functions should be placed in @~/.zeesh/custom/functions@ . All custom plugins should be placed in @~/.zeesh/custom/plugins @ . Any scripts, functions, or plugins in the proper directories will be automatically compiled and loaded in the environment the next time the @zsh@ configuration is reloaded.
+@zeesh@ has support for custom scripts without worry of destroying the already existing configuration. All global scripts that need to be loaded should be placed in @~/.zeesh/custom@ . All custom functions should be placed in @~/.zeesh/custom/functions@ . All custom plugins should be placed in @~/.zeesh/custom/plugins@ . Any scripts, functions, or plugins in the proper directories will be automatically compiled and loaded in the environment the next time the @zsh@ configuration is reloaded.
 
 h3. Sane Keyboard Bindings
 
