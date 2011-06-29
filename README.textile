@@ -71,6 +71,10 @@ h2. Default Key-Bindings
 | @Ctrl-Right@ | Move right a word |
 | @Ctrl-R@ | Incremental history search |
 
+h2. Known Problems
+
+1. It appears that the initial keybinding configuration used in @zeesh@ doesn't work under cygwin. This seems to be a known problem. Currently the only solution is to take an existing and working configuration from @~/.zeesh/.zkbd@ and copy it to the file that is failing to be created on cygwin. If anyone knows of a solution let me know.
+
 h2. Uninstalling
 
 Simply remove @~/.zeesh@ and make sure to remove your @~/.zshrc@ file is either deleted or you restore your old one.
