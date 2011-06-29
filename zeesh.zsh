@@ -16,6 +16,9 @@ for plugin ($plugins) fpath=($ZSH/plugins/$plugin $fpath)
 ## Add functions directory to function path
 fpath=($ZSH/functions $ZSH/internal_functions $fpath)
 
+## Add custom functions to function path
+[[ -d $ZSH/custom/functions ]] && fpath=($ZSH/custom/functions $fpath)
+
 #########################################################################
 #                         Initialization                                #
 #########################################################################

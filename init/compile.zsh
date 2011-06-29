@@ -14,6 +14,13 @@ compile_list=($ZSH/zeesh.zsh
               $ZSH/functions/*
               $ZSH/internal_functions/*)
 
+## If there are custom functions, compile those too.
+if [ -d $ZSH/custom/functions ]; then
+	setopt nullglob
+	compile_list=($ZSH/custom/functions/* $compile_list)
+	unsetopt nullglob
+fi
+
 ## Append to the list all activated plugins.
 for plugin ($plugins); do
 	if [ -f $ZSH/custom/plugins/$plugin/$plugin.plugin.zsh ]; then
