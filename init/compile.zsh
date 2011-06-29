@@ -6,20 +6,22 @@ zsh_cache_host=$zsh_cache/zcomp-$HOST
 ## Create the cache directory if it doesn't exist.
 mkdir -p $zsh_cache
 
+## Make sure wildcards don't break the script if there are no files in
+## a directory.
+setopt nullglob
+
 ## List of files to compile
 compile_list=($ZSH/zeesh.zsh
               $zsh_cache_host
               $ZSH/init/*.zsh
               $ZSH/lib/*.zsh
               $ZSH/functions/*
-              $ZSH/internal_functions/*)
+              $ZSH/internal_functions/*
+              $ZSH/custom/lib/*
+              $ZSH/custom/functions/*)
 
-## If there are custom functions, compile those too.
-if [ -d $ZSH/custom/functions ]; then
-	setopt nullglob
-	compile_list=($ZSH/custom/functions/* $compile_list)
-	unsetopt nullglob
-fi
+## Set this back to the default value
+unsetopt nullglob
 
 ## Append to the list all activated plugins.
 for plugin ($plugins); do
@@ -29,9 +31,6 @@ for plugin ($plugins); do
 		compile_list=($compile_list $ZSH/plugins/$plugin/$plugin.plugin.zsh)
 	fi
 done
-
-## Add custom libraries to the compile list.
-for config_file ($ZSH/custom/*.zsh) compile_list=($compile_list $config_file)
 
 ## Enable completion, but only dump to a cache file and compile only if the
 ## user is not root.
