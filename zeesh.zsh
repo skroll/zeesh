@@ -35,18 +35,19 @@ source $ZSH/init/keyboard.zsh
 ## Load all files in the lib directory
 for config_file ($ZSH/lib/*.zsh) source $config_file
 
-## Load all plugins, preferring custom ones, if available.
+## Load all plugins.
 for plugin ($plugins); do
+	## Don't load custom plugins yet, just make sure
+	## an overridden plugin doesn't get loaded.
 	if [ -f $ZSH/custom/plugins/$plugin/$plugin.plugin.zsh ]; then
-		source $ZSH/custom/plugins/$plugin/$plugin.plugin.zsh
 	elif [ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
 		source $ZSH/plugins/$plugin/$plugin.plugin.zsh
 	fi
 done
 
-## Load all custom libs
-for config_file ($ZSH/custom/*.zsh) source $config_file
+## Load custom libs/functions/plugins.
+source $ZSH/init/custom.zsh
 
-## Load the theme
+## Load the theme.
 source $ZSH/init/theme.zsh
 
