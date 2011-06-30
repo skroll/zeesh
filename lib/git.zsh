@@ -13,6 +13,8 @@ parse_git_dirty() {
 		echo -n "$ZSH_THEME_GIT_PROMPT_DIRTY"
 	fi
 
+	## Some versions of git use "Changed but not updated:" while others use
+	## "Changes not staged for commit:", so handle both here.
 	if [[ $(echo ${gitstat} | grep -c "^\(# Untracked files:\|# Changed but not updated:\|# Changes not staged for commit:\)$") > 0 ]]; then
 		echo -n "$ZSH_THEME_GIT_PROMPT_UNTRACKED"
 	fi 
