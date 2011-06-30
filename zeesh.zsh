@@ -4,8 +4,8 @@
 
 ## Set some variables for versioning information.
 export ZEESH_VERSION_MAJOR="0"
-export ZEESH_VERSION_MINOR="5"
-export ZEESH_VERSION_PATCH="2"
+export ZEESH_VERSION_MINOR="6"
+export ZEESH_VERSION_PATCH="0"
 
 export ZEESH_VERSION="$ZEESH_VERSION_MAJOR.$ZEESH_VERSION_MINOR.$ZEESH_VERSION_PATCH"
 
