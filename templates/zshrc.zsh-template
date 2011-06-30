@@ -12,10 +12,10 @@ export ZSH_THEME="default"
 # export DEFAULT_LANG="en_US.UTF-8"
 
 ## Set this if you don't want git support on the prompt
-# export DISABLE_ZEESH_GIT="true"
+# export ZEESH_DISABLE_GIT="true"
 
 ## Set this if you don't want hg support on the prompt
-# export DISABLE_ZEESH_HG="true"
+# export ZEESH_DISABLE_HG="true"
 
 plugins=(window-title)
 
