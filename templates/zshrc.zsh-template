@@ -9,7 +9,7 @@ export ZSH_THEME="default"
 # export ZEESH_DISABLE_LS_COLORS="true"
 
 ## Set this if you want to use a different default language
-# export DEFAULT_LANG="en_US.UTF-8"
+# export ZEESH_DEFAULT_LANG="en_US.UTF-8"
 
 ## Set this if you don't want git support on the prompt
 # export ZEESH_DISABLE_GIT="true"
