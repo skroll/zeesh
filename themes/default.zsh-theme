@@ -17,4 +17,4 @@ ZSH_THEME_HG_PROMPT_DIRTY="$ZSH_THEME_GIT_PROMPT_DIRTY"
 ZSH_THEME_HG_PROMPT_UNTRACKED="$ZSH_THEME_GIT_PROMPT_UNTRACKED"
 ZSH_THEME_HG_PROMPT_CLEAN="$ZSH_THEME_GIT_PROMPT_CLEAN"
 
-PROMPT='%{$reset_color%}%n %{$fg[blue]%}$(_prompt_pwd_compact)%{$reset_color%}$(git_prompt_info)$(hg_prompt_info)%{$reset_color%}: '
+PROMPT='%{$reset_color%}%n %{$fg[blue]%}$(_prompt_pwd_compact)%{$reset_color%}$(vcs_prompt_info)%{$reset_color%}: '
