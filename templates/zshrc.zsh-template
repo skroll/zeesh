@@ -3,7 +3,7 @@ export ZSH=$HOME/.zeesh
 export ZSH_THEME="default"
 
 ## Uncomment this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
+# export ZEESH_CASE_SENSITIVE="true"
 
 ## Uncomment this to disable colors in ls
 # export DISABLE_LS_COLORS="true"
