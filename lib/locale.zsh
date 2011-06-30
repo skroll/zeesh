@@ -1,8 +1,8 @@
 ## If a default language is not set, then use en_US.UTF-8
-if [[ -z "$DEFAULT_LANG" ]] then
+if [[ -z "$ZEESH_DEFAULT_LANG" ]] then
 	export LANG="en_US.UTF-8"
 else
-	export LANG="$DEFAULT_LANG"
+	export LANG="$ZEESH_DEFAULT_LANG"
 fi
 
 ## Append UTF-8 if it is not already

@@ -1,5 +1,5 @@
 # Check to see if the user is disabling LS_COLORS
-if [ "$DISABLE_LS_COLORS" != "true" ]
+if [ "$ZEESH_DISABLE_LS_COLORS" != "true" ]
 then
 	gnu_ls_options='--color=tty'
 	bsd_ls_options='-G'
