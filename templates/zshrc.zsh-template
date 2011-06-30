@@ -17,6 +17,9 @@ export ZSH_THEME="default"
 ## Set this if you don't want hg support on the prompt
 # export ZEESH_DISABLE_HG="true"
 
-plugins=(window-title)
+## Set this if you don't want window title updates
+# export ZEESH_DISABLE_WINDOW_TITLE="true"
+
+plugins=()
 
 source $ZSH/zeesh.zsh

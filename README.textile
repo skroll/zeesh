@@ -56,10 +56,6 @@ h3. tmux
 
 Helper functionality for "tmux":http://tmux.sourceforge.net/ which at the moment only allows for the ssh-agent environment varialbes to be properly set when a session is detached and reattached.
 
-h3. window-title
-
-Updates your terminal's window title to show your current path.
-
 h2. Default Key-Bindings
 
 | *Key* | *Function* |
