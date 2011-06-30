@@ -3,13 +3,19 @@ export ZSH=$HOME/.zeesh
 export ZSH_THEME="default"
 
 ## Uncomment this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
+# export ZEESH_CASE_SENSITIVE="true"
 
 ## Uncomment this to disable colors in ls
-# export DISABLE_LS_COLORS="true"
+# export ZEESH_DISABLE_LS_COLORS="true"
 
 ## Set this if you want to use a different default language
-# export DEFAULT_LANG="en_US.UTF-8"
+# export ZEESH_DEFAULT_LANG="en_US.UTF-8"
+
+## Set this if you don't want git support on the prompt
+# export ZEESH_DISABLE_GIT="true"
+
+## Set this if you don't want hg support on the prompt
+# export ZEESH_DISABLE_HG="true"
 
 plugins=(window-title)
 
