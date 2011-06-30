@@ -2,3 +2,4 @@
 .cache
 .zkbd
 .zsh_history
+bump_version.sh
