@@ -2,43 +2,44 @@
 #                       Global Variables                                #
 #########################################################################
 
+## Set some variables for versioning information.
 export ZEESH_VERSION_MAJOR="0"
 export ZEESH_VERSION_MINOR="5"
 export ZEESH_VERSION_PATCH="2"
 
 export ZEESH_VERSION="$ZEESH_VERSION_MAJOR.$ZEESH_VERSION_MINOR.$ZEESH_VERSION_PATCH"
 
-## Where the cache is stored
+## Where the cache is stored.
 zsh_cache="$ZSH/.cache"
 
 #########################################################################
 #                         Function Path                                 #
 #########################################################################
 
-## Add plugins to function path
+## Add plugins to function path.
 plugin=${plugin:=()}
 for plugin ($plugins) fpath=($ZSH/plugins/$plugin $fpath)
 
-## Add functions directory to function path
+## Add functions directory to function path.
 fpath=($ZSH/functions $ZSH/internal_functions $fpath)
 
-## Add custom functions to function path
+## Add custom functions to function path.
 [[ -d $ZSH/custom/functions ]] && fpath=($ZSH/custom/functions $fpath)
 
 #########################################################################
 #                         Initialization                                #
 #########################################################################
 
-## Some settings that should be available all time time
+## Some settings that should be available all time time.
 setopt extended_glob
 
-## Compile functions and plugins
+## Compile functions and plugins.
 source $ZSH/init/compile.zsh
 
-## Setup keyboard for key-bindings
+## Setup keyboard for key-bindings.
 source $ZSH/init/keyboard.zsh
 
-## Load all files in the lib directory
+## Load all files in the lib directory.
 for config_file ($ZSH/lib/*.zsh) source $config_file
 
 ## Load all plugins.
@@ -57,3 +58,4 @@ source $ZSH/init/custom.zsh
 ## Load the theme.
 source $ZSH/init/theme.zsh
 
+## All done!
