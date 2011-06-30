@@ -2,6 +2,12 @@
 #                       Global Variables                                #
 #########################################################################
 
+export ZEESH_VERSION_MAJOR="0"
+export ZEESH_VERSION_MINOR="5"
+export ZEESH_VERSION_PATCH="1"
+
+export ZEESH_VERSION="$ZEESH_VERSION_MAJOR.$ZEESH_VERSION_MINOR.$ZEESH_VERSION_PATCH"
+
 ## Where the cache is stored
 zsh_cache="$ZSH/.cache"
 
