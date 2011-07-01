@@ -1,0 +1,35 @@
+ZEESH_CASE_SENSITIVE
+Default: "false"
+Set to "true" to enable case sensitive auto-completion.
+
+ZEESH_DISABLE_LS_COLORS
+Default: "false"
+Set to "true" to disable colors in "ls" output.
+
+ZEESH_DEFAULT_LANG
+Default "en_US.UTF-8"
+The default locale that is set if none is provided.
+
+ZEESH_DISABLE_GIT
+Default "false"
+Set to "true" to disable git support on the command prompt.
+
+ZEESH_DISABLE_HG
+Default "false"
+Set to "true" to disable mercurial support on the command prompt.
+
+ZEESH_DISABLE_WINDOW_TITLE
+Default "false"
+Set to "true" to disable terminal window title updates.
+
+ZEESH_HISTFILE
+Default "$ZSH/.zsh_history"
+The file where the zsh history is saved to.
+
+ZEESH_HISTSIZE
+Default 10000
+The number of events that is stored in the internal history list.
+
+ZEESH_SAVEHIST
+Default 10000
+The number of events that will be saved in the zsh history file.
