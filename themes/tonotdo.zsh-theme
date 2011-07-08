@@ -1,3 +1,6 @@
+## Stolen from oh-my-zsh and modified
+
+## Configure the prompt
 PROMPT='%{$fg_no_bold[cyan]%}%n%{$fg_no_bold[magenta]%}➜%{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
 RPROMPT='[%*]'
 
