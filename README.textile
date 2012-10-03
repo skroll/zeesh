@@ -1,4 +1,4 @@
-h1. zeesh 0.6.1
+h1. zeesh 0.6.2
 
 Another framework for managing your zsh configuration. Much has been stolen from "oh-my-zsh":http://github.com/robbyrussel/oh-my-zsh.git .
 
@@ -55,6 +55,10 @@ Uses a file in your @~/.ssh@ directory to set ssh-agent environment variables wh
 h3. tmux
 
 Helper functionality for "tmux":http://tmux.sourceforge.net/ which at the moment only allows for the ssh-agent environment varialbes to be properly set when a session is detached and reattached.
+
+h3. zsh-syntax-highlighting
+
+Uses the wonderful "zsh-syntax-highlighting":http://github.com/zsh-users/zsh-syntax-highlighting script to add syntax highlighting to the prompt.
 
 h2. Default Key-Bindings
 
