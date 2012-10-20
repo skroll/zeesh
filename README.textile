@@ -8,7 +8,7 @@ h2. Setup
 
 1. Clone the repository
 
-  @git clone git://github.com/skroll/zeesh.git ~/.zeesh@
+  @git clone --recursive git://github.com/skroll/zeesh.git ~/.zeesh@
 
 2. Create a new zsh config by copying the zsh template. Make sure that you back up your old @~/.zshrc@ file in case you want to go back to it.
 
