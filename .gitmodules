@@ -1,3 +1,6 @@
 [submodule "vendor/zsh-syntax-highlighting"]
 	path = vendor/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vendor/badwolf"]
+	path = vendor/badwolf
+	url = git://github.com/skroll/badwolf.git
