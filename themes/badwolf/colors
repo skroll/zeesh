@@ -1,0 +1,44 @@
+## Set up a hash with the names of the colors and their associated ANSI
+## color codes.
+
+typeset -A badwolf_colors
+
+badwolf_colors=(
+	plain          '015'
+	snow           '015'
+	coal           '016'
+	brightgravel   '252'
+	lightgravel    '245'
+	gravel         '243'
+	mediumgravel   '241'
+	deepgravel     '238'
+	deepergravel   '236'
+	darkgravel     '235'
+	blackgravel    '233'
+	blackestgravel '232'
+	dalespale      '221'
+	dirtyblonde    '222'
+	taffy          '196'
+	saltwatertaffy '121'
+	tardis         '039'
+	orange         '214'
+	lime           '154'
+	dress          '211'
+	toffee         '137'
+	coffee         '173'
+	darkroast      '095'
+)
+
+## Build a hash with the color codes for entries that need ANSI escape
+## sequences and those that do not.
+
+typeset -A ZSH_THEME_COLORS ZSH_THEME_COLORS_FG
+
+for key in ${(k)badwolf_colors}; do
+	## ZSH_THEME_COLORS contains the plain codes
+	ZSH_THEME_COLORS[$key]=$badwolf_colors[$key]
+
+	## ZSH_THEME_COLORS_FG contains the ANSI escape sequences for the colors
+	ZSH_THEME_COLORS_FG[$key]=$FG[$badwolf_colors[$key]]
+done
+

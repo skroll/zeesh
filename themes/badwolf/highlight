@@ -1,0 +1,15 @@
+## Try to adjust as many of the highlighter styles as possible
+
+## Basic commands
+for key ("command" "alias" "builtin"); do
+	ZSH_HIGHLIGHT_STYLES[$key]="fg=$ZSH_THEME_COLORS[lime]"
+done
+
+## Bracket highlighting
+ZSH_HIGHLIGHT_STYLES[bracket-error]="fg=$ZSH_THEME_COLORS[taffy],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]="fg=$ZSH_THEME_COLORS[saltwatertaffy],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]="fg=$ZSH_THEME_COLORS[lime],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-3]="fg=$ZSH_THEME_COLORS[tardis],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]="fg=$ZSH_THEME_COLORS[orange],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-5]="fg=$ZSH_THEME_COLORS[dress],bold"
+
