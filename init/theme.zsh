@@ -1,10 +1,18 @@
-## Ensure the theme exists
-if [[ ! -f $ZSH/themes/$ZSH_THEME.zsh-theme ]]; then
+## Check if the theme is a directory
+if [[ -d $ZSH/themes/$ZSH_THEME ]]; then
+	ZSH_THEME_DIR="$ZSH/themes/$ZSH_THEME"
+	ZSH_THEME_FILE="$ZSH_THEME_DIR/zsh-theme"
+else
+	ZSH_THEME_FILE="$ZSH/themes/$ZSH_THEME.zsh-theme"
+fi
+
+if [[ ! -f $ZSH_THEME_FILE ]]; then
 	export ZSH_THEME="default"
+	ZSH_THEME_FILE="$ZSH/themes/$ZSH_THEME.zsh-theme"
 fi
 
 ## Load the theme
-source "$ZSH/themes/$ZSH_THEME.zsh-theme"
+source "$ZSH_THEME_FILE"
 
 ## If the theme provides LS_COLORS, then set list-colors
 ## for completion to use it.
