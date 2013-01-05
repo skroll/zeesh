@@ -4,7 +4,7 @@ Another framework for managing your zsh configuration. Much has been stolen from
 
 h2. Setup
 
-@zeesh@ has only been tested on @zsh@ 4.3.12, although it may work on older versions.
+@zeesh@ has only been tested on @zsh@ 4.3.12 and 5.0.2, although it may work on older versions.
 
 1. Clone the repository
 
