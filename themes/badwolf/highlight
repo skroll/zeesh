@@ -1,0 +1,29 @@
+## Try to adjust as many of the highlighter styles as possible
+
+## Basic commands
+ZSH_HIGHLIGHT_STYLES[default]="none"
+ZSH_HIGHLIGHT_STYLES[unknown-token]="fg=$ZSH_THEME_COLORS[taffy],bold"
+ZSH_HIGHLIGHT_STYLES[reserved-word]="fg=$ZSH_THEME_COLORS[dalespale]"
+
+for key ("alias" "builtin" "function" "command"); do
+	ZSH_HIGHLIGHT_STYLES[$key]="fg=$ZSH_THEME_COLORS[lime]"
+done
+
+ZSH_HIGHLIGHT_STYLES[precommand]="fg=$ZSH_THEME_COLORS[lime],underline"
+ZSH_HIGHLIGHT_STYLES[hashed-command]="fg=$ZSH_THEME_COLORS[lime]"
+ZSH_HIGHLIGHT_STYLES[globbing]="fg=$ZSH_THEME_COLORS[tardis]"
+ZSH_HIGHLIGHT_STYLES[history-expansion]="fg=$ZSH_THEME_COLORS[tardis]"
+
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]="fg=$ZSH_THEME_COLORS[dalespale]"
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]="fg=$ZSH_THEME_COLORS[dalespale]"
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]="fg=$ZSH_THEME_COLORS[saltwatertaffy]"
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]="fg=$ZSH_THEME_COLORS[saltwatertaffy]"
+
+## Bracket highlighting
+ZSH_HIGHLIGHT_STYLES[bracket-error]="fg=$ZSH_THEME_COLORS[taffy],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]="fg=$ZSH_THEME_COLORS[tardis],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]="fg=$ZSH_THEME_COLORS[lime],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-3]="fg=$ZSH_THEME_COLORS[dress],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]="fg=$ZSH_THEME_COLORS[dalespale],bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-5]="fg=$ZSH_THEME_COLORS[saltwatertaffy],bold"
+

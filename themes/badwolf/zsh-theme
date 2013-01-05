@@ -1,0 +1,28 @@
+##  ____            _               _  __
+## | __ )  __ _  __| |_      _____ | |/ _|
+## |  _ \ / _` |/ _` \ \ /\ / / _ \| | |_
+## | |_) | (_| | (_| |\ V  V / (_) | |  _|
+## |____/ \__,_|\__,_| \_/\_/ \___/|_|_|
+
+## Zeesh theme derived from vim theme by Steve Losh, which exists at:
+## (https://github.com/sjl/badwolf)
+
+## Try to detect dircolors
+for i ("dircolors" "gdircolors"); do
+	[[ -n "$(command -v $i)" ]] && DIRCOLORS_CMD="$i"
+done
+
+## Theme specific ls colors
+if (($+DIRCOLORS_CMD)); then
+	eval $($DIRCOLORS_CMD -b $ZSH/vendor/badwolf/contrib/badwolf.dircolors)
+else
+	echo "Warning: dircolors not found, install it to enable ls colors."
+fi
+
+export LSCOLORS="exgxgxfxcxdAfAaCeCacAE"
+
+## Load other files for theme
+for file ("colors" "highlight" "prompt"); do
+	source "$ZSH_THEME_DIR/$file"
+done
+
