@@ -1,6 +1,6 @@
 h1. zeesh 0.6.3
 
-Another framework for managing your zsh configuration. Much has been stolen from "oh-my-zsh":http://github.com/robbyrussel/oh-my-zsh.git .
+Another framework for managing your zsh configuration. Much has been stolen from "oh-my-zsh":http://github.com/robbyrussell/oh-my-zsh.git .
 
 h2. Setup
 
