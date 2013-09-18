@@ -36,8 +36,19 @@ zstyle '*' single-ignored show
 ## Do not automatically select the first completion entry
 unsetopt menu_complete
 
-## Show completion menu on successive 
+## Show completion menu on successive
 setopt auto_menu
 
 ## Enable menu select on all completions
-zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*:*:*:*:*'      menu select
+
+## Group completions
+zstyle ':completion:*'              group-name  ''
+zstyle ':completion:*'              list-colors "=$reset_color=${(s.:.)LS_COLORS}"
+zstyle ':completion:*:matches'      group 'yes'
+zstyle ':completion:*:options'      description 'yes'
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:corrections'  format "%{$c3%}%d%{$reset_color%}"
+zstyle ':completion:*:messages'     format "%{$c1%}%d%{$reset_color%}"
+zstyle ':completion:*:warnings'     format "%{$c1%}%d%{$reset_color%}"
+
