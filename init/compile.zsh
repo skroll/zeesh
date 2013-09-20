@@ -1,7 +1,7 @@
 ## Load functions for compiling scripts.
 autoload -U compinit zrecompile
 
-zsh_cache_host=$zsh_cache/zcomp-$HOST
+zsh_cache_dump="$zsh_cache/zcomp-${HOST}-${ZSH_VERSION}"
 
 ## Create the cache directory if it doesn't exist.
 mkdir -p $zsh_cache
@@ -12,7 +12,7 @@ setopt nullglob
 
 ## List of files to compile
 compile_list=($ZSH/zeesh.zsh
-              $zsh_cache_host
+              $zsh_cache_dump
               $ZSH/init/*.zsh
               $ZSH/lib/*.zsh
               $ZSH/functions/*
@@ -37,7 +37,7 @@ done
 if [ $UID -eq 0 ]; then
 	compinit
 else
-	compinit -d $zsh_cache_host
+	compinit -d $zsh_cache_dump
 
 	## Compile scripts.
 	for f in $compile_list; do

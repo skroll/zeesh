@@ -13,5 +13,10 @@ ZSH_THEME_HG_PROMPT_DIRTY="$ZSH_THEME_GIT_PROMPT_DIRTY"
 ZSH_THEME_HG_PROMPT_UNTRACKED="$ZSH_THEME_GIT_PROMPT_UNTRACKED"
 ZSH_THEME_HG_PROMPT_CLEAN="$ZSH_THEME_GIT_PROMPT_CLEAN"
 
-PROMPT='%{$reset_color%}%n %{$ZSH_THEME_COLORS_FG[tardis]%}$(_prompt_pwd_compact)%{$reset_color%}$(vcs_prompt_info)%{$reset_color%}: '
+badwolf_prompt_prefix=""
+if [[ ! -z "$debian_chroot" ]]; then
+  badwolf_prompt_prefix="($debian_chroot) "
+fi
+
+PROMPT='%{$reset_color%}$badwolf_prompt_prefix%n %{$ZSH_THEME_COLORS_FG[tardis]%}$(_prompt_pwd_compact)%{$reset_color%}$(vcs_prompt_info)%{$reset_color%}: '
 
