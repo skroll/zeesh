@@ -1,4 +1,4 @@
-h1. zeesh 0.6.4
+h1. zeesh 0.6.5
 
 Another framework for managing your zsh configuration. Much has been stolen from "oh-my-zsh":http://github.com/robbyrussell/oh-my-zsh.git .
 
